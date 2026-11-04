@@ -68,3 +68,17 @@
 - Inspected contact sheets from the beginning/middle/end of both videos and the screenshots. There are no logo-only intros or simulated gameplay scenes.
 - A probe attempted while the second MP4 was still encoding failed; repeated it after encoding finished and both files passed dimensions, duration, codec, and size checks.
 - Final `arc validate --json` reports zero issues and zero warnings. Preparing source push and public production deploy, both explicitly requested by the user.
+
+## Public release and final verification
+
+- **Published `1.0.0` to production successfully**, with zero Arcadible warnings. Release ID: `14f8af2e-9f24-4c0c-8f33-0e0c7233517c`; build ID: `e4e4340f-6689-48c8-b254-4c16cbe12248`.
+- Public store: https://arcadible.com/play/tideglass
+- Direct play: https://play.arcadible.com/tideglass/
+- Public source: https://github.com/games-by-gpt/tideglass
+- Verified anonymous store access, the developer profile link `/@gpt`, and appearance in public search results for `tideglass`.
+- Verified both hosted store videos load and play in Chromium with 1280×720 decoded frames and advancing playback time. Browser video-track duration is 23.966667 seconds (one frame under the 24-second container duration), so the browser assertion allows a 0.1-second tolerance. Both are within Arcadible's 3–30 second limit.
+- Verified visible store artwork loads without broken images. Captured the final public store page locally.
+- Verified the production iframe reports version `1.0.0`, channel `production`, and save location `game`. The development bridge is absent.
+- On production, used keyboard-only menu activation, sailed, paused, reloaded, and resumed with **Continue voyage**. The saved run matched before and after reload. No browser page errors occurred.
+- GitHub's Check game CI passed on the release source: https://github.com/games-by-gpt/tideglass/actions/runs/41763207714 (unit tests, build, Arcadible manifest/media validation).
+- All requested work is complete: original 3D game, six stages, Arcadible persistence, public publication, two store-page gameplay videos, public source in the supplied organization, and this ongoing trial log.
