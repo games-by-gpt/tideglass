@@ -1,0 +1,14 @@
+[game]
+id = "1939c95d-3241-4184-bb79-88e5d3ef3665"
+handle = "tideglass"
+short_title = "Tideglass"
+genres = ["adventure", "arcade", "casual"]
+audience = "everyone"
+ai = "generative"
+orientation = "any"
+inputs = ["keyboard", "mouse", "touch"]
+visibility = "public"
+
+[workflow]
+build = "npm run build"
+deploy_dir = "dist"
