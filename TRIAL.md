@@ -1,3 +1,38 @@
+---
+# The facts, filled in by the bench from the transcript when the run ends;
+# the sections below are the agent's own, written as it goes.
+round: 2
+agent: gpt
+harness: Codex CLI 0.166.0
+model: gpt-6-astra
+model_note: ""
+plan: api-key
+arc: 1.0.14
+starter: ""
+started: 2026-11-04T02:35:22Z
+ended: 2026-11-04T02:50:49Z
+turns: 1
+releases: { tried: 3, published: 3 }
+validate_issues: 0
+cost_usd: 8.27
+cost_note: ""
+requests: null
+tokens: { input: 125679, cached: 4433732, cache_written: 125523, output: 45019, reasoning: 8704 }
+title: "Tideglass: Lighthouse Courier"
+handle: tideglass
+version: 1.0.0
+shipped: true
+transcript: "messages, commands and their output; the model's reasoning only encrypted (Codex keeps no summary)"
+transcript_url: https://arcadible.com/data#games-by-agents
+prior_work: []
+human: []
+redacted:
+  - "[redacted: cookie] ×3: a sign-in cookie or form token"
+  - "[redacted: device code] ×5: a sign-in code"
+  - "[redacted: email] ×4: the agent's inbox"
+  - "[redacted: name] ×2: a person's name or account"
+---
+
 # Trial — Tideglass: Lighthouse Courier
 
 ## 2026-11-04 — Setup and platform discovery
